@@ -1,0 +1,100 @@
+.modal
+  &__overlay
+    position: fixed
+    display: flex
+    align-items: center
+    justify-content: center
+    left: 0
+    right: 0
+    top: 0
+    bottom: 0
+    background-color: rgba(0, 143, 223, 0.39)
+    z-index: 100
+    // visibility: hidden
+    // opacity: 0
+    // transition: opacity 0.2s
+    // overflow: auto
+    // &--visible
+    //   visibility: visible
+    //   opacity: 1
+  &__dialog
+    position: relative
+    margin: auto
+    max-width: 478px
+    padding: 33px 88px
+    background-color: $title-color
+    color: $white
+    border-radius: 8px
+    z-index: 101
+    // visibility: hidden
+    // opacity: 0
+    // transition: opacity 0.2s
+    // &-wrapper
+    //   height: 100%
+    //   width: 100%
+    //   position: relative
+    //   overflow-x: auto
+    //   overflow-y: auto
+    // &--visible
+    //   visibility: visible
+    //   opacity: 1
+    //   overflow-x: auto
+    //   overflow-y: auto
+  &__close
+    position: absolute
+    top: 17px
+    right: 18px
+    text-decoration: none
+    cursor: pointer
+    z-index: 120
+  &__input
+    width: 100%
+    font-size: 12px
+    line-height: 15px
+    &-group
+      position: relative
+      overflow: visible
+      width: 302px
+      height: 50px
+      margin-bottom: 18px
+  &__message
+    width: 100%
+    min-height: 123px
+    margin-bottom: 13px
+    font-size: 12px
+    line-height: 15px
+  &__info
+    font-size: 12px
+    line-height: 15px
+    font-weight: 700
+    color: $white
+    &-wrapper
+      display: flex
+      align-items: center
+      justify-content: space-between
+  &__title
+    margin-bottom: 15px
+    margin-top: 0
+    font-size: 18px
+    line-height: 23px
+    font-weight: 700
+    color: $white
+    text-align: center
+    text-transform: uppercase
+    vertical-align: top
+  &__button
+    min-width: 160px
+    min-height: 50px
+    font-size: 16px
+    line-height: 22px
+    padding: 18px
+    color: $white
+    background-color: $light-blue
+    border-radius: 8px
+    text-transform: uppercase
+    text-decoration: none
+    border: 2px solid #1565D8
+    &:hover
+      text-decoration: underline
+    &:active
+      color: $orange
