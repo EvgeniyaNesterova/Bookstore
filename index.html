@@ -96,7 +96,7 @@
                 type="text"
                 class="input modal__input"
                 placeholder="Ваше имя*"
-                name="name_booking"
+                name="name"
                 required
                 minlength="2"
               />
@@ -106,8 +106,8 @@
                 type="tel"
                 class="input modal__input"
                 placeholder="Ваш номер телефона*"
-                name="phone_booking"
-                id="phone_1"
+                name="phone"
+                id="phone"
                 required
                 minlength="16"
               />
@@ -117,7 +117,7 @@
                 type="email"
                 class="input modal__input"
                 placeholder="Ваш Email*"
-                name="email_booking"
+                name="email"
                 required
               />
             </div>
@@ -127,8 +127,8 @@
               name="message_booking"
             ></textarea>
             <div class="modal__info-wrapper">
-              <button class="button modal__button">Send</button>
-              <span class="modal__info">* Required Fields</span>
+              <button class="button modal__button">Отправить</button>
+              <span class="modal__info">*Важно</span>
             </div>
           </form>
         </div>
@@ -138,6 +138,8 @@
     </div>
     <!-- /.modal -->
     <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/jquery.mask.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>

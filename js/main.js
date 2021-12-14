@@ -30,4 +30,26 @@ $(document).keydown(function(e) {
     }
 });
 
+$('.form').each(function() {
+    $(this).validate({
+    errorClass: "invalid",
+    messages: {
+    name: {
+      required: "Укажите ваше имя",
+      minlength: "Укажите полное имя"
+    },
+    email: {
+      required: "Укажите ваш email",
+    },
+    phone: {
+      required: "Укажите номер телефона",
+      minlength: "Должен состоять из 11 цифр"
+    },
+    
+  },
+  });
+  });
+  $(document).ready(function(){
+  $("#phone").mask("+7(999) 999-9999");
+  });
 });
