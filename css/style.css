@@ -16,6 +16,7 @@ body {
 .button {
   cursor: pointer;
   overflow: hidden;
+  outline: none;
 }
 
 .input {
@@ -27,6 +28,7 @@ body {
   height: 50px;
   font-size: 16px;
   line-height: 22px;
+  outline: none;
 }
 
 .message {
@@ -399,6 +401,16 @@ template {
   bottom: 0;
   background-color: rgba(0, 143, 223, 0.39);
   z-index: 100;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+  overflow: auto;
+}
+
+.modal__overlay--visible {
+  visibility: visible;
+  opacity: 1;
 }
 
 .modal__dialog {
@@ -410,6 +422,25 @@ template {
   color: #FFFFFF;
   border-radius: 8px;
   z-index: 101;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.modal__dialog-wrapper {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow-x: auto;
+  overflow-y: auto;
+}
+
+.modal__dialog--visible {
+  visibility: visible;
+  opacity: 1;
+  overflow-x: auto;
+  overflow-y: auto;
 }
 
 .modal__close {
