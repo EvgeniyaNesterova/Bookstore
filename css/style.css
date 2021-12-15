@@ -1227,10 +1227,10 @@ template {
     max-width: 95%;
   }
   .main__button-dark {
-    padding: 8px 21px;
+    padding: 8px 4px;
   }
   .main__button-light {
-    padding: 8px 29px;
+    padding: 8px 4px;
   }
   .modal__dialog {
     width: 90%;
@@ -1252,6 +1252,7 @@ template {
     max-width: 280px;
     padding-left: 0;
     padding-right: 0;
+    padding-top: 0;
   }
   .main-info {
     max-width: 280px;
