@@ -650,8 +650,23 @@ template {
           justify-content: space-between;
 }
 
+.main-image {
+  position: absolute;
+  top: 113px;
+  left: 123px;
+}
+
 .main-image-container {
-  padding: 103px 119px;
+  position: relative;
+  width: 488px;
+  height: 580px;
+}
+
+.main-image-block {
+  width: 100%;
+  height: 100%;
+  background-color: #B3BAC5;
+  opacity: 10%;
 }
 
 .main-info {
@@ -891,8 +906,6 @@ template {
   font-size: 16px;
   line-height: 20px;
   color: #1565D8;
-  opacity: 1;
-  z-index: 20;
   text-transform: uppercase;
 }
 
