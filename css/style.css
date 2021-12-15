@@ -5,7 +5,7 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
-  background-color: #E5E5E5;
+  background-color: #FFFFFF;
 }
 
 .container {
@@ -17,6 +17,7 @@ body {
   cursor: pointer;
   overflow: hidden;
   outline: none;
+  font-weight: 700;
 }
 
 .input {
@@ -29,6 +30,7 @@ body {
   font-size: 16px;
   line-height: 22px;
   outline: none;
+  font-weight: 700;
 }
 
 .message {
@@ -50,6 +52,14 @@ body {
   font-size: 10px;
   line-height: 13px;
   font-family: inherit;
+}
+
+.image {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -612,7 +622,7 @@ template {
   border: 2px solid #1565D8;
   color: #1565D8;
   border-radius: 8px;
-  background-color: #E5E5E5;
+  background-color: #FFFFFF;
 }
 
 .navbar__button:hover {
@@ -690,7 +700,7 @@ template {
   font-size: 18px;
   line-height: 32px;
   font-weight: 400;
-  margin-bottom: 72px;
+  margin-bottom: 74px;
 }
 
 .main__button-dark {
@@ -719,7 +729,7 @@ template {
   line-height: 25px;
   padding: 17px 50px;
   color: #1565D8;
-  background-color: #E5E5E5;
+  background-color: #FFFFFF;
   border-radius: 8px;
   text-transform: uppercase;
   text-decoration: none;
@@ -732,6 +742,263 @@ template {
 
 .main__button-light:active {
   color: #FAAD13;
+}
+
+.recommend-left {
+  width: 751px;
+}
+
+.recommend-container {
+  padding-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.recommend-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 27px;
+}
+
+.recommend-item-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 156px;
+}
+
+.recommend-item-feedback {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.recommend-item-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 358px;
+  margin-bottom: 32px;
+  padding: 11px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.recommend-item-title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: 500;
+  color: #183B56;
+  margin-bottom: 16px;
+  padding-top: 13px;
+}
+
+.recommend-item-field {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #183B56;
+  margin-bottom: 24px;
+}
+
+.recommend-item-price {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #1565D8;
+  margin-bottom: 24px;
+}
+
+.recommend-item-button {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 7px 20px;
+  background-color: #183B56;
+  color: #FFFFFF;
+  border-radius: 20px;
+  margin-right: 25px;
+  border: none;
+}
+
+.recommend-item-feedback {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.recommend-image {
+  border-radius: 8px;
+}
+
+.recommend-image-container {
+  width: 160px;
+  overflow: hidden;
+}
+
+.recommend-title {
+  margin: 0;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  color: #183B56;
+  margin-bottom: 30px;
+}
+
+.recommend-button {
+  width: 100%;
+  height: 100%;
+  background-color: #1565D8;
+  opacity: 10%;
+}
+
+.recommend-button-container {
+  width: 751px;
+  height: 72px;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.recommend-button-text {
+  position: absolute;
+  top: 25px;
+  left: 287px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #1565D8;
+  opacity: 1;
+  z-index: 20;
+  text-transform: uppercase;
+}
+
+.recommend__line {
+  width: 312px;
+  height: 1px;
+  text-align: center;
+  border: none;
+  border-top: 1px solid #ECEEF2;
+  margin-top: 27px;
+  margin-bottom: 0;
+}
+
+.top-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.top-list-book {
+  width: 360px;
+}
+
+.top-list-text {
+  padding: 25px 124px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #1565D8;
+  text-transform: uppercase;
+}
+
+.top-book-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 166px;
+}
+
+.top-book-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 24px;
+}
+
+.top-book-title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: 500;
+  color: #183B56;
+  margin-bottom: 15px;
+  padding-top: 13px;
+}
+
+.top-book-price {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #1565D8;
+  margin-bottom: 22px;
+}
+
+.top-book-button {
+  width: 101px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 7px 20px;
+  background-color: #183B56;
+  color: #FFFFFF;
+  border-radius: 20px;
+  border: none;
+}
+
+.top-image {
+  width: 120px;
+  border-radius: 6px;
+}
+
+.icon {
+  max-width: 20px;
+  max-height: 18px;
+  fill: #959EAD;
+  cursor: pointer;
+}
+
+.icon-red {
+  max-width: 20px;
+  max-height: 18px;
+  fill: rgba(136, 11, 28, 0.671);
 }
 
 @media (max-width: 1200px) {
@@ -852,7 +1119,7 @@ template {
         -ms-flex-direction: column;
             flex-direction: column;
     border: none;
-    background-color: #E5E5E5;
+    background-color: #FFFFFF;
     cursor: pointer;
   }
   .menu-button__line {
