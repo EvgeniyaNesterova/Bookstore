@@ -52,4 +52,9 @@ $('.form').each(function() {
   $(document).ready(function(){
   $("#phone").mask("+7(999) 999-9999");
   });
+
+  var heartIcon = $(".icon");
+heartIcon.on("click", function () {
+  $(this).toggleClass("icon-red");
+});
 });
