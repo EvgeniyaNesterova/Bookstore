@@ -7,6 +7,66 @@
         padding: 18px 20px
       &-light
         padding: 17px 25px
+  .recommend
+    &-container
+      flex-wrap: wrap
+    &-left
+      width: 100%
+    &-list
+      &__item
+        width: 50%
+    &-item
+      &-wrapper
+        width: 100%
+        padding: 0
+      &-text
+        width: 200px
+    &-image
+      &-container
+        width: 230px
+        height: 360px
+    &-button
+      &-container
+        width: 100%
+        margin-bottom: 56px
+      &-text
+        top: 40%
+        left: 40%
+        font-size: 20px
+        line-height: 24px
+    &-right
+      width: 100%
+    &__line
+      width: 90%
+  .top
+    &-list
+      flex-direction: row
+      flex-wrap: wrap
+      &-book
+        width: 50%
+      &-text
+        text-align: center
+        font-size: 20px
+        line-height: 24px
+    &-book
+      &-wrapper
+        width: 100%
+        padding: 0
+        margin-bottom: 24px
+      &-text
+        width: 200px
+      &-title
+        margin-bottom: 19px
+      &-price
+        margin-bottom: 24px
+    &-image
+      &-container
+        width: 230px
+        height: 360px
+    &-image
+      width: 100%
+      height: 100%
+
 @media (max-width: 992px)
   .container
     max-width: 700px
@@ -71,6 +131,23 @@
     &__button
       &:hover
         text-decoration: none
+  .recommend
+    &-image
+      &-container
+        width: 160px
+        height: 238px
+    &-item
+      &-text
+        width: 170px
+
+  .top
+    &-image
+      &-container
+        width: 160px
+        height: 238px
+    &-book
+      &-text
+        width: 170px
 @media (max-width: 767px)
   .container
     max-width: 576px
@@ -112,6 +189,7 @@
       margin-bottom: 32px
     &-text
       text-align: center
+      margin-bottom: 14px
     &__button
       min-width: 100%
       align-items: center
@@ -144,6 +222,44 @@
         align-items: flex-start
     &__button
       width: 100%
+  .recommend
+    &-container
+      padding-top: 200px
+    &-list
+      flex-direction: column
+      &__item
+        width: 100%
+        &--remove
+          display: none
+    &-image
+      &-container
+        width: 230px
+        height: 360px
+    &-item
+      &-text
+        width: 250px
+      &-wrapper
+        justify-content: space-evenly
+    &-title
+      text-align: center
+    &-button
+      &-text
+        left: 30%
+  .top
+    &-list
+      flex-direction: column
+      &-book
+        width: 100%
+    &-book
+      &-wrapper
+        justify-content: space-evenly
+        margin-bottom: 33px
+      &-text
+        width: 250px
+    &-image
+      &-container
+        width: 230px
+        height: 360px
 @media (max-width: 670px)
   .container
     max-width: 95%
@@ -177,6 +293,7 @@
       width: 144px
       &-container
         width: 438px
+        height: 333px
         padding: 0
       &-block
         width: 100%
@@ -187,6 +304,114 @@
     &__input
       &-group
         width: 100%
+  .recommend
+    &-container
+      padding-top: 56px
+    &-title
+      font-size: 28px
+      line-height: 36px
+      margin-bottom: 44px
+    &-image
+      &-container
+        width: 144px
+        height: 215px
+    &-item
+      &-wrapper
+        flex-direction: column
+        align-items: center
+      &-feedback
+        width: 155px
+      &-button
+        min-width: 115px
+      &-text
+        width: 100%
+        align-items: center
+      &-button
+        &-text
+          left: 27%
+  .top
+    &-book
+      &-text
+        width: 200px
+    &-image
+      &-container
+        width: 144px
+        height: 215px
+  .icon
+    min-width: 19px
+    min-height: 21px
+@media (max-width: 485px)
+  .recommend
+    &-list
+      &__item
+        margin-bottom: 26px
+        &--remove
+          &--2
+            display: none
+    &-image
+      &-container
+        margin-bottom: 20px
+        width: 96px
+        height: 137px
+    &-item
+      &-title
+        font-size: 20px
+        line-height: 24px
+        margin-bottom: 12px
+        padding: 0
+      &-field
+        font-size: 14px
+        line-height: 20px
+        margin-bottom: 16px
+      &-price
+        font-size: 16px
+        line-height: 20px
+        margin-bottom: 20px
+    &-button
+      margin-bottom: 56px
+      &-text
+        font-size: 16px
+        line-height: 20px
+        left: 30%
+        text-transform: none
+    &-title
+      &__mb
+        margin-bottom: 47px
+  .top
+    &-list
+      align-items: center
+      &-text
+        padding-top: 20px
+        padding-left: 0
+        padding-right: 0
+        &__title
+          font-size: 16px
+          line-height: 20px
+      &-book
+        width: 290px
+    &-image
+      &-container
+        width: 96px
+        height: 142px
+    &-book
+      &-text
+        width: 175px
+        align-items: flex-start
+      &-wrapper
+        padding-top: 14px
+        padding-left: 4px
+        justify-content: space-between
+        margin-bottom: 22px
+      &-title
+        font-family: 'Roboto Condensed', sans-serif
+        font-weight: 700
+        font-size: 16px
+        line-height: 24px
+        padding: 0
+        width: 108px
+        margin-bottom: 12px
+      &-price
+        margin-bottom: 14px
 @media (max-width: 480px)
   .container
     max-width: 280px
@@ -206,6 +431,13 @@
         max-width: 176px
       &-light
         max-width: 176px
+  .recommend
+    &-button
+      &-text
+        left: 61px
+        top: 14px
+      &-container
+        height: 48px
 @media (max-width: 320px)
   .container
     max-width: 280px
