@@ -853,6 +853,14 @@ template {
   border: none;
 }
 
+.recommend-item-button:hover {
+  text-decoration: underline;
+}
+
+.recommend-item-button:active {
+  color: #FAAD13;
+}
+
 .recommend-item-feedback {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1003,6 +1011,14 @@ template {
   color: #FFFFFF;
   border-radius: 20px;
   border: none;
+}
+
+.top-book-button:hover {
+  text-decoration: underline;
+}
+
+.top-book-button:active {
+  color: #FAAD13;
 }
 
 .top-image {
@@ -1197,12 +1213,18 @@ template {
   .recommend-item-text {
     width: 170px;
   }
+  .recommend-item-button:hover {
+    text-decoration: none;
+  }
   .top-image-container {
     width: 160px;
     height: 238px;
   }
   .top-book-text {
     width: 170px;
+  }
+  .top-book-button:hover {
+    text-decoration: none;
   }
 }
 
@@ -1515,7 +1537,7 @@ template {
     left: 30%;
     text-transform: none;
   }
-  .recommend-title__mb {
+  .recommend-title-mb {
     margin-bottom: 47px;
   }
   .top-list {
