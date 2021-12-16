@@ -1197,6 +1197,7 @@ template {
   .modal__dialog {
     width: 378px;
     padding: 30px 60px;
+    margin-top: 50px;
   }
   .modal__input-group {
     width: 100%;
