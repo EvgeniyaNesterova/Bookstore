@@ -13,6 +13,7 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto+Condensed:wght@700&family=Roboto:wght@500&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
@@ -408,17 +409,89 @@
           <!-- /.recommendations-right -->
         </div>
         <!-- /.recommendations-container -->
+        <hr class="recommend__lining" />
       </div>
       <!-- /.container -->
     </section>
     <!-- /.recommendations -->
     <section class="genres">
-      <div class="container">
+      <div class="container genres-container">
         <div class="swiper genres-slider">
-          <div class="swiper-wrapper"></div>
-          <!-- /.swiper-wrapper -->
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="genres-slider__item">
+                <div class="genres-slider-wrapper">
+                  <img
+                    class="genres-slider-icon"
+                    src="./img/icon-slider-1.svg"
+                    alt="Иконка: Бизнес & Финансы"
+                  />
+                  <h2 class="genres-slider-title">Бизнес & Финансы</h2>
+                  <span class="genres-slider-subtitle"
+                    >Книги про мир бизнеса</span
+                  >
+                </div>
+                <!-- /.genres-slider-wrapper -->
+              </div>
+              <!-- /.genres-slider__item -->
+            </div>
+            <div class="swiper-slide">
+              <div class="genres-slider__item">
+                <div class="genres-slider-wrapper">
+                  <img
+                    class="genres-slider-icon"
+                    src="./img/icon-slider-2.svg"
+                    alt="Иконка: Самомотивация"
+                  />
+                  <h2 class="genres-slider-title">Самомотивация</h2>
+                  <span class="genres-slider-subtitle">Книги о мотивации</span>
+                </div>
+                <!-- /.genres-slider-wrapper -->
+              </div>
+              <!-- /.genres-slider__item -->
+            </div>
+            <div class="swiper-slide">
+              <div class="genres-slider__item">
+                <div class="genres-slider-wrapper">
+                  <img
+                    class="genres-slider-icon"
+                    src="./img/icon-slider-3.svg"
+                    alt="Иконка: Романы Теленовеллы"
+                  />
+                  <h2 class="genres-slider-title">Романы Теленовеллы</h2>
+                  <span class="genres-slider-subtitle"
+                    >Книги с крутыми историями</span
+                  >
+                </div>
+                <!-- /.genres-slider-wrapper -->
+              </div>
+              <!-- /.genres-slider__item -->
+            </div>
+            <div class="swiper-slide">
+              <div class="genres-slider__item">
+                <div class="genres-slider-wrapper">
+                  <img
+                    class="genres-slider-icon"
+                    src="./img/icon-slider-4.svg"
+                    alt="Иконка: Навыки будущего"
+                  />
+                  <h2 class="genres-slider-title">Навыки будущего</h2>
+                  <span class="genres-slider-subtitle"
+                    >Книги для самоподготовки</span
+                  >
+                </div>
+                <!-- /.genres-slider-wrapper -->
+              </div>
+              <!-- /.genres-slider__item -->
+            </div>
+          </div>
         </div>
-        <!-- /.genres-slider -->
+        <button
+          class="genres-slider-button genres-slider-button--prev"
+        ></button>
+        <button
+          class="genres-slider-button genres-slider-button--next"
+        ></button>
       </div>
       <!-- /.container -->
     </section>

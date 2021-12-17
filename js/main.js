@@ -1,5 +1,31 @@
 $(document).ready(function () {
 
+const genresSwiper = new Swiper('.genres-slider', {
+  // Optional parameters
+  loop: true,
+  speed: 500,
+  slidesPerView: 4,
+  stopOnLastSlide: true,
+  watchOverflow: true,
+  watchSlidesProgress: true,
+  spaceBetween: 26,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.genres-slider-button--next',
+    prevEl: '.genres-slider-button--prev',
+  },
+
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+  },
+
+  mousewheel: {
+    sensitivity: 1,
+  }
+});
+
 var modalButton = $("[data-toggle=modal]");
 var closeModalButton = $(".modal__close");
 modalButton.on("click", openModal);
