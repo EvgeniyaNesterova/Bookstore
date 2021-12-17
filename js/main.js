@@ -8,7 +8,6 @@ const genresSwiper = new Swiper('.genres-slider', {
   stopOnLastSlide: true,
   watchOverflow: true,
   watchSlidesProgress: true,
-  spaceBetween: 26,
 
   // Navigation arrows
   navigation: {
