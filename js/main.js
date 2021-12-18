@@ -25,6 +25,48 @@ const genresSwiper = new Swiper('.genres-slider', {
   }
 });
 
+const unpublishedSwiper = new Swiper('.unpublished-swiper', {
+  // Optional parameters
+  loop: true,
+  speed: 500,
+  slidesPerView: 5,
+  stopOnLastSlide: true,
+  watchOverflow: true,
+  watchSlidesProgress: true,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.unpublished-slider-button--next',
+    prevEl: '.unpublished-slider-button--prev',
+  },
+
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+  },
+
+  mousewheel: {
+    sensitivity: 1,
+  },
+  breakpoints: {
+          1440: {
+            slidesPerView: 5,
+          },
+          1200: {
+            slidesPerView: 4,
+          },
+          992: {
+            slidesPerView: 3,
+          },
+          768: {
+            slidesPerView: 2.5,
+          },
+          640: {
+            slidesPerView: 1,
+          },
+        },
+});
+
 var modalButton = $("[data-toggle=modal]");
 var closeModalButton = $(".modal__close");
 modalButton.on("click", openModal);
