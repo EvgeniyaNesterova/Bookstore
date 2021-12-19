@@ -2,12 +2,19 @@ $(document).ready(function () {
 
 const genresSwiper = new Swiper('.genres-slider', {
   // Optional parameters
-  loop: true,
+loop: true,
+  watchOverflow: false, 
+  loopedSlides: 4,
   speed: 500,
   slidesPerView: 4,
-  stopOnLastSlide: true,
-  watchOverflow: true,
-  watchSlidesProgress: true,
+  grid: {
+          column: 2,
+        },
+  // slidesPerColumn: 2,
+  // slidesPerColumnFill: column, 
+  // stopOnLastSlide: true,
+  // watchOverflow: true,
+  // watchSlidesProgress: true,
 
   // Navigation arrows
   navigation: {
@@ -22,8 +29,44 @@ const genresSwiper = new Swiper('.genres-slider', {
 
   mousewheel: {
     sensitivity: 1,
-  }
+  },
+  breakpoints: {
+          992: {
+            slidesPerView: 4,
+            loopedSlides: 4,
+          },
+          767: {
+            slidesPerView: 4,
+            loopedSlides: 4,
+          },
+          670: {
+            slidesPerView: 3,
+            loopedSlides: 3,
+          },
+          576: {
+            slidesPerView: 4,
+            loopedSlides: 4,
+          }
+        },
+        
+
+        //   },
+        //   670: {
+        //     loop: false,
+        //     slidesPerView: 3,
+        //   },
+        //   480: {
+        //     loop: false,
+        //     slidesPerView: 4,
+        //     spaceBetween: 10,
+        //   },
+        //   320: {
+        //     loop: false,
+        //     slidesPerView: 4,
+        //   },
+        // },
 });
+
 
 const unpublishedSwiper = new Swiper('.unpublished-swiper', {
   // Optional parameters
@@ -33,6 +76,7 @@ const unpublishedSwiper = new Swiper('.unpublished-swiper', {
   stopOnLastSlide: true,
   watchOverflow: true,
   watchSlidesProgress: true,
+  
 
   // Navigation arrows
   navigation: {
@@ -56,12 +100,18 @@ const unpublishedSwiper = new Swiper('.unpublished-swiper', {
             slidesPerView: 4,
           },
           992: {
-            slidesPerView: 3,
+            slidesPerView: 4,
           },
           768: {
-            slidesPerView: 2.5,
+            slidesPerView: 2,
           },
           640: {
+            slidesPerView: 2,
+          },
+          480: {
+            slidesPerView: 1,
+          },
+          320: {
             slidesPerView: 1,
           },
         },
