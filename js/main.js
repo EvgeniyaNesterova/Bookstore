@@ -1,74 +1,77 @@
 $(document).ready(function () {
 
-const genresSwiper = new Swiper('.genres-slider', {
-  // Optional parameters
-loop: true,
-  watchOverflow: false, 
-  loopedSlides: 4,
-  speed: 500,
+const genresSwiper = new Swiper('.genres-swiper', {
+  loop: true,
   slidesPerView: 4,
-  grid: {
-          column: 2,
-        },
-  // slidesPerColumn: 2,
-  // slidesPerColumnFill: column, 
-  // stopOnLastSlide: true,
-  // watchOverflow: true,
-  // watchSlidesProgress: true,
+  loopedSlides: 4,
+  spaceBetween: 26,
 
-  // Navigation arrows
+  breakpoints: {
+          1440: {
+            slidesPerView: 4,
+            loopedSlides: 4,
+            spaceBetween: 26,
+          },
+          1200: {
+            slidesPerView: 3,
+            loopedSlides: 3,
+            spaceBetween: 26,
+          },
+          992: {
+            slidesPerView: 3,
+            loopedSlides: 3,
+            spaceBetween: 10,
+          },
+          767: {
+            grid: {
+                    rows: 2,
+                  },
+            slidesPerView: 2,
+            spaceBetween: 15,
+          },
+          670: {
+            grid: {
+                    rows: 2,
+                  },
+            slidesPerView: 2,
+            spaceBetween: 15,
+          },
+          576: {
+            grid: {
+                    rows: 2,
+            },
+            slidesPerView: 2,
+            spaceBetween: 10,
+          },
+          485: {
+            grid: {
+                    rows: 2,
+                  },
+            slidesPerView: 2,
+            spaceBetween: 10,
+          },
+          480: {
+            grid: {
+                    rows: 2,
+                  },
+            slidesPerView: 2,
+            spaceBetween: 10,
+          },
+          320: {
+            grid: {
+                    rows: 2,
+                  },
+            slidesPerView: 2,
+            spaceBetween: 10,
+          },
+        },
   navigation: {
     nextEl: '.genres-slider-button--next',
     prevEl: '.genres-slider-button--prev',
   },
-
-  keyboard: {
-    enabled: true,
-    onlyInViewport: true,
-  },
-
-  mousewheel: {
-    sensitivity: 1,
-  },
-  breakpoints: {
-          992: {
-            slidesPerView: 4,
-            loopedSlides: 4,
-          },
-          767: {
-            slidesPerView: 4,
-            loopedSlides: 4,
-          },
-          670: {
-            slidesPerView: 3,
-            loopedSlides: 3,
-          },
-          576: {
-            slidesPerView: 4,
-            loopedSlides: 4,
-          }
-        },
-        
-
-        //   },
-        //   670: {
-        //     loop: false,
-        //     slidesPerView: 3,
-        //   },
-        //   480: {
-        //     loop: false,
-        //     slidesPerView: 4,
-        //     spaceBetween: 10,
-        //   },
-        //   320: {
-        //     loop: false,
-        //     slidesPerView: 4,
-        //   },
-        // },
 });
 
-
-const unpublishedSwiper = new Swiper('.unpublished-swiper', {
+  const unpublishedSwiper = new Swiper('.unpublished-swiper', {
   // Optional parameters
   loop: true,
   speed: 500,
@@ -174,4 +177,12 @@ $('.form').each(function() {
 heartIcon.on("click", function () {
   $(this).toggleClass("icon-red");
 });
+//   var arrowPrev = $(".unpublished-slider-button--prev");
+// arrowPrev.on("click", function () {
+//   $(this).addClass("unpublished-slider-button--prev--orange");
+// });
+// var arrowNext = $(".unpublished-slider-button--next");
+// arrowNext.on("click", function () {
+//   $(this).addClass("unpublished-slider-button--next--orange");
+// });
 });
