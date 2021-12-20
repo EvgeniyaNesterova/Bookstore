@@ -662,6 +662,8 @@ template {
   position: absolute;
   top: 113px;
   left: 123px;
+  -webkit-filter: drop-shadow(0px 20px 24px rgba(0, 0, 0, 0.08));
+          filter: drop-shadow(0px 20px 24px rgba(0, 0, 0, 0.08));
 }
 
 .main-image-container {
