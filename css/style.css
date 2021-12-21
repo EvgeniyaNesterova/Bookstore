@@ -1270,7 +1270,7 @@ template {
 
 .history {
   padding-top: 76px;
-  padding-bottom: 100px;
+  padding-bottom: 105px;
 }
 
 .history-text {
@@ -1420,6 +1420,54 @@ template {
 .history-video-image-small {
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.partners {
+  padding-top: 80px;
+  padding-bottom: 91px;
+  background-color: #B3BAC5;
+}
+
+.partners-title {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 50px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.partners-block-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 57px;
+}
+
+.partners-block-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 @media (max-width: 1200px) {
