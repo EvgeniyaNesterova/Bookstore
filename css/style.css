@@ -66,6 +66,10 @@ body {
   display: none;
 }
 
+.video {
+  cursor: pointer;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1262,6 +1266,152 @@ template {
 
 .unpublished-slider-button--next:active {
   outline: 1px dotted #FAAD13;
+}
+
+.history {
+  padding-top: 76px;
+}
+
+.history-text {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  line-height: 32px;
+  color: #5A7184;
+  width: 383px;
+  padding-top: 28px;
+  padding-right: 8px;
+}
+
+.history-text-title {
+  width: 503px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  color: #183B56;
+  margin: 0;
+  padding-top: 28px;
+  margin-right: 83px;
+}
+
+.history-text-container {
+  width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 19px;
+}
+
+.history-video-icon {
+  width: 30px;
+  height: 39px;
+  position: absolute;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  z-index: 800;
+  top: 40%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 50%;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+  background-image: url(../img/play-icon.svg);
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+}
+
+.history-video__play-button {
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: #FFFFFF;
+  background-image: url(../img/play-video-icon.svg);
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 37%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  z-index: 600;
+  position: absolute;
+  background-image: url(../img/play-video-icon.svg);
+  background-size: 30px;
+}
+
+.history-video-item {
+  position: relative;
+  margin-bottom: 22px;
+}
+
+.history-video-title {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 32px;
+  color: #183B56;
+}
+
+.history-video-subtitle {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #5A7184;
+}
+
+.history-video-container {
+  margin-right: auto;
+  margin-left: auto;
+  width: 1005px;
+}
+
+.history-video-large {
+  position: relative;
+  margin-bottom: 26px;
+}
+
+.history-video-small {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.history-video-text-wrapper {
+  width: 315px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 @media (max-width: 1200px) {
