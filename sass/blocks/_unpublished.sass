@@ -1,10 +1,16 @@
 .unpublished
   padding-top: 62px
-  padding-bottom: 56px
+  padding-bottom: 30px
   background-color: $title-color
   &-container
     position: relative
+  &-swiper
+    padding-top: 100px
+    padding-bottom: 59px
   &-title
+    position: absolute
+    top: 0
+    left: 0
     font-family: 'Roboto Condensed', sans-serif
     font-weight: 700
     font-size: 36px
@@ -31,27 +37,19 @@
       border: 2px solid #5A7184
       border-radius: 50%
       top: 0
-      z-index: 502
+      z-index: 600
       cursor: pointer
       background-repeat: no-repeat
       background-position: center
-      background-color: $white
       &--prev
-        left: 85%
+        left: 88%
         background-image: url(../img/arrow-prev.svg)
-        &::active
-          outline: 5px solid $orange
-      &-orange
-        left: 85%
-        background-image: url(../img/arrow-prev.svg)
-        background-color: $orange
+        background-color: $white
+        &:active
+          outline: 1px dotted $orange
       &--next
-        right: 2%
+        right: 0
         background-image: url(../img/arrow-next.svg)
-
-.swiper
-  height: 330px
-  &-wrapper
-    display: flex
-    align-items: center
-    justify-content: space-between
+        background-color: $white
+        &:active
+          outline: 1px dotted $orange

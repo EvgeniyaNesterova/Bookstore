@@ -73,9 +73,9 @@
     &-slider
       &-button
         &--prev
-          left: 72%
+          left: 80%
         &--next
-          right: 12%
+          right: 3%
 @media (max-width: 992px)
   .container
     max-width: 700px
@@ -165,6 +165,8 @@
   .unpublished
     &-slider
       &-button
+        &--prev
+          left: 70%
         &--next
           right: 4%
   .genres
@@ -374,38 +376,45 @@
     padding-top: 48px
     padding-bottom: 48px
     &-wrapper
+      width: 206px
       justify-content: center
     &-container
-      width: 320px
       margin: 0
-      height: 465px
+      height: 561px
     &-swiper
-      width: 232px
+      width: 206px
+      height: 490px
       &-wrapper
         width: 232px
     &-slide
       &__wrapper
+        text-align: center
         width: 206px
         height: 300px
     &-slider
       &-button
         width: 48px
         height: 48px
-        top: 90%
+        top: 95%
         &--prev
-          left: 33%
+          left: 35%
         &--next
-          right: 41%
+          right: 35%
     &-title
       font-size: 28px
       line-height: 36px
       text-align: center
       margin-bottom: 32px
+      left: 25%
   .genres
+    padding-bottom: 59px
+    &-swiper
+      padding-top: 0
     &-container
       width: 400px
       height: 450px
     &-slide
+      height: 182px
       &-wrapper
         width: 185px
         height: 168px
@@ -504,12 +513,9 @@
         width: 102px
         align-items: flex-start
         justify-content: space-evenly
-
       &-wrapper
         justify-content: space-between
         margin-bottom: 35px
-        &--first
-
       &-title
         font-family: 'Roboto Condensed', sans-serif
         font-weight: 700
@@ -529,6 +535,7 @@
         &--next
           right: 35%
   .genres
+    padding-bottom: 0
     &-container
       width: 290px
       height: 400px
@@ -539,13 +546,17 @@
         width: 140px
         height: 182px
     &-swiper
-      padding-top: 55px
+      padding-top: 0
+    &-slider
+      &-button
+        top: 80%
   .modal
     &__dialog
       min-width: 90%
 @media (max-width: 480px)
   .container
     max-width: 280px
+    margin: auto
   .navbar
     &-menu
       max-width: 280px
@@ -569,13 +580,31 @@
         top: 14px
       &-container
         height: 48px
+    &__lining
+      margin-top: 50px
   .genres
+    padding-top: 54px
     &-container
       width: 95%
-      height: 511px
+      height: 514px
   .modal
     &__dialog
       min-width: 90%
+  .unpublished
+    &-title
+      left: 10%
+      margin-bottom: 0
+    &-slider
+      &-button
+        top: 90%
+        &--prev
+          left: 30%
+        &--next
+          right: 30%
+    &-swiper
+      padding-top: 78px
+    &-container
+      height: 465px
 @media (max-width: 320px)
   .container
     max-width: 280px

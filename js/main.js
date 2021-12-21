@@ -108,7 +108,10 @@ const genresSwiper = new Swiper('.genres-swiper', {
           768: {
             slidesPerView: 2,
           },
-          640: {
+          670: {
+            slidesPerView: 2,
+          },
+          576: {
             slidesPerView: 2,
           },
           480: {
