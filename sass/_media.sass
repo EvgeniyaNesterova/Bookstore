@@ -76,6 +76,25 @@
           left: 80%
         &--next
           right: 3%
+  .history
+    &-video
+      &-container
+        width: 900px
+      &-image
+        &-large
+          width: 100%
+        &-small
+          width: 100%
+          text-align: center
+      &-small
+        &__item
+          width: 280px
+      &-text
+        &-wrapper
+          width: 100%
+    &-text
+      &-container
+        width: 900px
 @media (max-width: 992px)
   .container
     max-width: 700px
@@ -175,6 +194,32 @@
     &-slider
       &-button
         top: 46%
+  .history
+    &-video
+      &-icon
+        background-size: 20px
+      &-play
+        &-button
+          width: 70px
+          height: 70px
+          background-size: 20px
+      &-container
+        width: 700px
+      &-image
+        &-large
+          width: 100%
+        &-small
+          width: 100%
+          text-align: center
+      &-small
+        &__item
+          width: 215px
+      &-text
+        &-wrapper
+          width: 100%
+    &-text
+      &-container
+        width: 700px
 @media (max-width: 767px)
   .container
     max-width: 576px
@@ -292,6 +337,44 @@
     &-slider
       &-button
         top: 46%
+  .history
+    padding-top: 44px
+    &-video
+      &-icon
+        background-size: 21px
+      &-play
+        &-button
+          width: 56px
+          height: 56px
+          background-size: 17px
+      &-hidden
+        display: none
+      &-container
+        width: 500px
+      &-image
+        &-large
+          width: 100%
+        &-small
+          width: 100%
+          text-align: center
+      &-small
+        &__item
+          width: 235px
+      &-text
+        &-wrapper
+          width: 100%
+    &-text
+      padding-top: 0
+      width: 100%
+      margin-bottom: 35px
+      &-container
+        width: 500px
+        display: block
+        text-align: center
+      &-title
+        padding-top: 0
+        margin-bottom: 24px
+
 @media (max-width: 670px)
   .container
     max-width: 95%
@@ -443,6 +526,31 @@
           left: 40%
         &--next
           right: 42%
+  .history
+    &-text
+      &-title
+        font-size: 28px
+        line-height: 36px
+        width: 400px
+      &-container
+        width: 400px
+    &-video
+      &-container
+        width: 400px
+      &-small
+        &__item
+          width: 185px
+      &-text
+        margin-bottom: 16px
+        &-wrapper
+          flex-direction: column
+          align-items: center
+          text-align: center
+      &-item
+        margin-bottom: 16px
+      &-title
+        margin-bottom: 6px
+
 @media (max-width: 485px)
   .container
     width: 95%
@@ -553,6 +661,50 @@
   .modal
     &__dialog
       min-width: 90%
+  .history
+    &-flag
+      &-icon
+        width: 10px
+    &-wrapper
+      width: 300px
+    &-container
+      width: 100%
+      text-align: center
+    &-text
+      width: 100%
+      line-height: 25px
+      vertical-align: top
+      text-align: center
+      padding-right: 0
+      &-title
+        width: 100%
+      &-container
+        width: 280px
+    &-video
+      &-large
+        margin-bottom: 16px
+      &-image
+        &-small
+          height: 138px
+        &-large
+          height: 210px
+          object-fit: cover
+      &-container
+        width: 300px
+        margin: auto
+      &-large
+        height: 100%
+      &-small
+        &__item
+          width: 140px
+      &-title
+        font-size: 16px
+        line-height: 20px
+      &-subtitle
+        font-size: 12px
+        line-height: 20px
+      &-icon
+        top: 21%
 @media (max-width: 480px)
   .container
     max-width: 280px
@@ -605,9 +757,15 @@
       padding-top: 78px
     &-container
       height: 465px
+  .history
+    &-wrapper
+      max-width: 300px
 @media (max-width: 320px)
   .container
     max-width: 280px
   .modal
     &__dialog
       max-width: 90%
+  .history
+    &-wrapper
+      max-width: 300px
