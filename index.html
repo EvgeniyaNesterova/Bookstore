@@ -695,7 +695,7 @@
               <img
                 src="./img/logo-slack.svg"
                 alt="Slack"
-                class="partners-top-item-image"
+                class="partners-top-item-image partners-image-first"
               />
             </div>
             <div class="partners-top-item">
@@ -716,21 +716,21 @@
               <img
                 src="./img/logo-google.svg"
                 alt="Google"
-                class="partners-top-item-image"
+                class="partners-top-item-image partners-image-second"
               />
             </div>
             <div class="partners-top-item">
               <img
                 src="./img/logo-airbnb.svg"
                 alt="Airbnb"
-                class="partners-top-item-image"
+                class="partners-top-item-image partners-image-third"
               />
             </div>
             <div class="partners-top-item">
               <img
                 src="./img/logo-uber.svg"
                 alt="Uber"
-                class="partners-top-item-image"
+                class="partners-top-item-image partners-image-forth"
               />
             </div>
           </div>
@@ -790,12 +790,18 @@
       <div class="container blog-container">
         <div class="blog-title-box">
           <h2 class="blog-title">Ehya Блог</h2>
-          <button class="button blog-title-button">Все Блоги</button>
+          <button class="button blog-title-button blog-title-button-visible">
+            Все Блоги
+          </button>
         </div>
         <div class="blog-wrapper">
           <div class="blog-left">
-            <div class="blog-left-image">
-              <img src="./img/blog-left-image.png" alt="Фото: Ehya Блог" />
+            <div class="blog-left-image-box">
+              <img
+                class="blog-left-image"
+                src="./img/blog-left-image.png"
+                alt="Фото: Ehya Блог"
+              />
             </div>
             <!-- /.blog-left-image -->
             <div class="blog-left-text">
@@ -870,7 +876,9 @@
           <!-- /.blog-right -->
         </div>
         <!-- /.blog-wrapper -->
-        <!-- /.blog-title -->
+        <button class="button blog-title-button blog-title-button-hidden">
+          Все Блоги
+        </button>
       </div>
       <!-- /.container -->
     </section>

@@ -95,6 +95,30 @@
     &-text
       &-container
         width: 900px
+  .blog
+    &-left
+      width: 445px
+      &-image
+        width: 100%
+        height: 100%
+        &-box
+          width: 445px
+          height: 264px
+      &-text
+        width: 100%
+    &-right
+      &-item
+        height: 120px
+      &-image
+        width: 100%
+        height: 100%
+        &-box
+          width: 200px
+          height: 100%
+      &-text
+        &-box
+          height: 100%
+
 @media (max-width: 992px)
   .container
     max-width: 700px
@@ -179,8 +203,8 @@
       &-text
         width: 170px
       &-button
-        &:hover
-          text-decoration: none
+      &:hover
+        text-decoration: none
   .unpublished
     &-slider
       &-button
@@ -230,6 +254,61 @@
         margin-bottom: 0
       &-bottom
         display: none
+  .blog
+    &-title
+      font-size: 30px
+      line-height: 42px
+      &-button
+        min-width: 159px
+        min-height: 44px
+        font-size: 14px
+        line-height: 20px
+        padding: 11px 15px
+        &:hover
+          text-decoration: none
+    &-left
+      align-items: flex-start
+      &-text
+        width: 280px
+      &__text
+        font-size: 16px
+        line-height: 26px
+      &-title
+        font-size: 18px
+        line-height: 28px
+      &-image
+        width: 280px
+        height: 120px
+        &-box
+          width: 280px
+          height: 120px
+          border-radius: 5px
+    &-right
+      align-items: flex-start
+      justify-content: space-between
+      &-item
+        height: 90px
+      &-link
+        font-size: 14px
+        line-height: 18px
+      &-title
+        font-size: 18px
+        line-height: 28px
+      &-date
+        font-size: 12px
+        line-height: 18px
+    &-right
+      &-image
+        width: 90px
+        height: 90px
+        &-box
+          width: 90px
+          height: 90px
+          border-radius: 5px
+      &-text
+        &-box
+          height: 90px
+
 @media (max-width: 767px)
   .container
     max-width: 576px
@@ -394,7 +473,37 @@
         width: 190px
         display: flex
         justify-content: center
-
+  .blog
+    &-wrapper
+      flex-direction: column
+    &-left
+      margin-left: 0
+      width: 100%
+      flex-direction: row
+      justify-content: space-between
+      &-text
+        max-width: 280px
+      &-image
+        width: 280px
+        height: 174px
+        &-box
+          width: 280px
+          height: 174px
+    &-right
+      height: 500px
+      &-image
+        width: 200px
+        height: 100px
+        &-box
+          width: 200px
+          height: 100px
+          margin-right: 15px
+      &-text
+        &-box
+          height: 100%
+      &-item
+        height: 100px
+        justify-content: start
 @media (max-width: 670px)
   .container
     max-width: 95%
@@ -413,6 +522,42 @@
         padding: 0
       &-block
         width: 100%
+  .blog
+    &-title
+      font-size: 28px
+      line-height: 36px
+      margin-bottom: 10px
+    &-left
+      justify-content: start
+      &-text
+        width: 350px
+      &__text
+        font-size: 12px
+        line-height: 24px
+      &-image
+        width: 224px
+        height: 140px
+        &-box
+          width: 224px
+          height: 140px
+          margin-right: 15px
+    &-right
+      &-link
+        font-family: 'Roboto Condensed', sans-serif
+        font-size: 10px
+        line-height: 20px
+      &-title
+        font-size: 14px
+        line-height: 20px
+      &-date
+        font-size: 10px
+        line-height: 20px
+      &-image
+        width: 90px
+        height: 90px
+        &-box
+          width: 90px
+          height: 90px
 @media (max-width: 576px)
   .container
     max-width: 95%
@@ -682,7 +827,7 @@
     &__dialog
       min-width: 90%
   .history
-    padding-bottom: 35px
+    padding-bottom: 39px
     &-flag
       &-icon
         width: 10px
@@ -728,19 +873,80 @@
         top: 21%
   .partners
     padding-top: 37px
+    padding-bottom: 35px
     &-title
       line-height: 30px
       width: 273px
+      margin-bottom: 32px
     &-top
       &-item
         width: 100px
+        &-image
+          width: 86px
+          height: 23px
     &-block
       &-top
-        height: 132px
-        align-items: center
+        height: 150px
+        align-items: stretch
         justify-content: space-evenly
-        width: 297px
+        width: 280px
         margin: auto
+    &-image
+      &-first
+        width: 99px
+        height: 28px
+      &-second
+        height: 28px
+      &-third
+        height: 27px
+      &-forth
+        height: 19px
+
+  .blog
+    padding-top: 56px
+    &-wrapper
+      width: 280px
+      margin: auto
+    &-title
+      margin: auto
+      &-box
+        margin-bottom: 48px
+      &-button
+        &-visible
+          display: none
+        &-hidden
+          display: block
+          margin: auto
+    &-left
+      flex-direction: column
+      margin-bottom: 28px
+      &-title
+        margin-bottom: 10px
+        font-size: 16px
+        line-height: 20px
+      &-image
+        width: 280px
+        height: 120px
+        &-box
+          margin: 0
+          margin-bottom: 20px
+          width: 280px
+          height: 120px
+    &-right
+      height: 100%
+      justify-content: start
+      margin-bottom: 5px
+      &-item
+        margin-bottom: 31px
+        height: 90px
+        width: 282px
+        justify-content: space-between
+      &-title
+        &-first
+          width: 150px
+      &-text
+        &-box
+          width: 171px
 @media (max-width: 480px)
   .container
     max-width: 280px

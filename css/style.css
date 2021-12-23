@@ -1074,6 +1074,7 @@ template {
 
 .genres {
   padding-top: 60px;
+  overflow: hidden;
 }
 
 .genres-wrapper {
@@ -1194,6 +1195,7 @@ template {
   padding-top: 62px;
   padding-bottom: 30px;
   background-color: #183B56;
+  overflow: hidden;
 }
 
 .unpublished-container {
@@ -1271,6 +1273,7 @@ template {
 .history {
   padding-top: 76px;
   padding-bottom: 105px;
+  overflow: hidden;
 }
 
 .history-text {
@@ -1426,6 +1429,7 @@ template {
   padding-top: 80px;
   padding-bottom: 91px;
   background-color: #B3BAC5;
+  overflow: hidden;
 }
 
 .partners-title {
@@ -1473,6 +1477,7 @@ template {
 .blog {
   padding-top: 100px;
   padding-bottom: 100px;
+  overflow: hidden;
 }
 
 .blog-wrapper {
@@ -1527,6 +1532,10 @@ template {
   color: #FAAD13;
 }
 
+.blog-title-button-hidden {
+  display: none;
+}
+
 .blog-left {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1542,10 +1551,16 @@ template {
 }
 
 .blog-left-image {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.blog-left-image-box {
   width: 556px;
   height: 330px;
   margin: 0;
   margin-bottom: 30px;
+  overflow: hidden;
 }
 
 .blog-left-text {
@@ -1613,6 +1628,11 @@ template {
 
 .blog-right-link:active {
   color: #FAAD13;
+}
+
+.blog-right-image {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .blog-right-image-box {
@@ -1765,6 +1785,34 @@ template {
   .history-text-container {
     width: 900px;
   }
+  .blog-left {
+    width: 445px;
+  }
+  .blog-left-image {
+    width: 100%;
+    height: 100%;
+  }
+  .blog-left-image-box {
+    width: 445px;
+    height: 264px;
+  }
+  .blog-left-text {
+    width: 100%;
+  }
+  .blog-right-item {
+    height: 120px;
+  }
+  .blog-right-image {
+    width: 100%;
+    height: 100%;
+  }
+  .blog-right-image-box {
+    width: 200px;
+    height: 100%;
+  }
+  .blog-right-text-box {
+    height: 100%;
+  }
 }
 
 @media (max-width: 992px) {
@@ -1863,7 +1911,7 @@ template {
   .top-book-text {
     width: 170px;
   }
-  .top-book-button:hover {
+  .top-book:hover {
     text-decoration: none;
   }
   .unpublished-slider-button--prev {
@@ -1917,6 +1965,80 @@ template {
   }
   .partners-block-bottom {
     display: none;
+  }
+  .blog-title {
+    font-size: 30px;
+    line-height: 42px;
+  }
+  .blog-title-button {
+    min-width: 159px;
+    min-height: 44px;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 11px 15px;
+  }
+  .blog-title-button:hover {
+    text-decoration: none;
+  }
+  .blog-left {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .blog-left-text {
+    width: 280px;
+  }
+  .blog-left__text {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .blog-left-title {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .blog-left-image {
+    width: 280px;
+    height: 120px;
+  }
+  .blog-left-image-box {
+    width: 280px;
+    height: 120px;
+    border-radius: 5px;
+  }
+  .blog-right {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .blog-right-item {
+    height: 90px;
+  }
+  .blog-right-link {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .blog-right-title {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .blog-right-date {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .blog-right-image {
+    width: 90px;
+    height: 90px;
+  }
+  .blog-right-image-box {
+    width: 90px;
+    height: 90px;
+    border-radius: 5px;
+  }
+  .blog-right-text-box {
+    height: 90px;
   }
 }
 
@@ -2149,6 +2271,55 @@ template {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .blog-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blog-left {
+    margin-left: 0;
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .blog-left-text {
+    max-width: 280px;
+  }
+  .blog-left-image {
+    width: 280px;
+    height: 174px;
+  }
+  .blog-left-image-box {
+    width: 280px;
+    height: 174px;
+  }
+  .blog-right {
+    height: 500px;
+  }
+  .blog-right-image {
+    width: 200px;
+    height: 100px;
+  }
+  .blog-right-image-box {
+    width: 200px;
+    height: 100px;
+    margin-right: 15px;
+  }
+  .blog-right-text-box {
+    height: 100%;
+  }
+  .blog-right-item {
+    height: 100px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
 }
 
 @media (max-width: 670px) {
@@ -2173,6 +2344,53 @@ template {
   }
   .main-image-block {
     width: 100%;
+  }
+  .blog-title {
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 10px;
+  }
+  .blog-left {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .blog-left-text {
+    width: 350px;
+  }
+  .blog-left__text {
+    font-size: 12px;
+    line-height: 24px;
+  }
+  .blog-left-image {
+    width: 224px;
+    height: 140px;
+  }
+  .blog-left-image-box {
+    width: 224px;
+    height: 140px;
+    margin-right: 15px;
+  }
+  .blog-right-link {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 10px;
+    line-height: 20px;
+  }
+  .blog-right-title {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .blog-right-date {
+    font-size: 10px;
+    line-height: 20px;
+  }
+  .blog-right-image {
+    width: 90px;
+    height: 90px;
+  }
+  .blog-right-image-box {
+    width: 90px;
+    height: 90px;
   }
 }
 
@@ -2518,7 +2736,7 @@ template {
     min-width: 90%;
   }
   .history {
-    padding-bottom: 35px;
+    padding-bottom: 39px;
   }
   .history-flag-icon {
     width: 10px;
@@ -2577,24 +2795,106 @@ template {
   }
   .partners {
     padding-top: 37px;
+    padding-bottom: 35px;
   }
   .partners-title {
     line-height: 30px;
     width: 273px;
+    margin-bottom: 32px;
   }
   .partners-top-item {
     width: 100px;
   }
+  .partners-top-item-image {
+    width: 86px;
+    height: 23px;
+  }
   .partners-block-top {
-    height: 132px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    height: 150px;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
-    width: 297px;
+    width: 280px;
     margin: auto;
+  }
+  .partners-image-first {
+    width: 99px;
+    height: 28px;
+  }
+  .partners-image-second {
+    height: 28px;
+  }
+  .partners-image-third {
+    height: 27px;
+  }
+  .partners-image-forth {
+    height: 19px;
+  }
+  .blog {
+    padding-top: 56px;
+  }
+  .blog-wrapper {
+    width: 280px;
+    margin: auto;
+  }
+  .blog-title {
+    margin: auto;
+  }
+  .blog-title-box {
+    margin-bottom: 48px;
+  }
+  .blog-title-button-visible {
+    display: none;
+  }
+  .blog-title-button-hidden {
+    display: block;
+    margin: auto;
+  }
+  .blog-left {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 28px;
+  }
+  .blog-left-title {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .blog-left-image {
+    width: 280px;
+    height: 120px;
+  }
+  .blog-left-image-box {
+    margin: 0;
+    margin-bottom: 20px;
+    width: 280px;
+    height: 120px;
+  }
+  .blog-right {
+    height: 100%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    margin-bottom: 5px;
+  }
+  .blog-right-item {
+    margin-bottom: 31px;
+    height: 90px;
+    width: 282px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .blog-right-title-first {
+    width: 150px;
+  }
+  .blog-right-text-box {
+    width: 171px;
   }
 }
 
